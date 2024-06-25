@@ -1,6 +1,6 @@
 CREATE TABLE Сustumers --Клиенты
 (
-    id_SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     firstName TEXT NOT NULL,
     middlename TEXT,
     lastName TEXT NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE Сustumers --Клиенты
 
 CREATE TABLE Mechanics --Мастера
 (
-    id_SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     firstname TEXT NOT NULL,
     middlename TEXT,
     lastname TEXT NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE Mechanics --Мастера
 
 CREATE TABLE Zapchasti --Запчасти
 (
-    id_SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     zapchasti TEXT,
     stoimost FLOAT
 );
@@ -28,7 +28,7 @@ CREATE TABLE Zapchasti --Запчасти
 
 CREATE TABLE Orders --Заказы
 (
-    id_SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     tip_remonta TEXT,
     custumer_id INT,
     mechanic_id INT,
